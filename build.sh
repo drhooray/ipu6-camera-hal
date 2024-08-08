@@ -111,7 +111,7 @@ function build_hal_adaptor() {
     cd $SOURCE_DIR/ipu6-camera-hal/src/hal/hal_adaptor
     rm -fr build && mkdir -p build && cd build
 
-    command cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR/install ../
+    command cmake -DCMAKE_INSTALL_PREFIX=/usr ../
 
     # make and install
     make -j
